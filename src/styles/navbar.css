@@ -1,0 +1,66 @@
+.navbar{
+position:sticky;
+top:0;
+z-index:1000;
+background:#f8f5ef;
+padding:4px 40px;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.navMenu{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:35px;
+list-style:none;
+}
+
+.navMenu li{
+cursor:pointer;
+font-weight:500;
+font-size:15px;
+color:#0d5575;
+transition:.3s;
+}
+
+.navMenu li:hover{
+color:#e3a326;
+}
+
+.logo{
+width:80px;
+}
+
+.mobileIcon{
+display:none;
+font-size:26px;
+cursor:pointer;
+}
+
+@media(max-width:900px){
+.mobileIcon{
+display:block;
+position:absolute;
+right:25px;
+top:20px;
+}
+
+.navMenu{
+display:none;
+flex-direction:column;
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+background:#f8f5ef;
+padding:20px 0;
+}
+
+.navMenu.active{
+display:flex;
+}
+
+.logoWrap{
+order:-1;
+}
+}

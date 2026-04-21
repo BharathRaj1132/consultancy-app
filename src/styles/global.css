@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f8f5ef;
+color:#12344d;
+}
+
+.section{
+min-height:100vh;
+padding:120px 30px 60px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.section h2{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.section p{
+max-width:700px;
+font-size:18px;
+line-height:1.8;
+}
+
+.alt{
+background:#ffffff;
+}
+
+.hero{
+background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.hero h1{
+font-size:64px;
+max-width:800px;
+font-weight:700;
+}
+
+@media(max-width:768px){
+.hero h1{font-size:38px;}
+.section h2{font-size:30px;}
+.section p{font-size:16px;}
+}
+
+.touchSection{
+min-height:100vh;
+padding:90px 20px;
+background:#efefef;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.touchContainer{
+width:100%;
+max-width:600px;
+}
+
+.touchContainer h2{
+font-size:64px;
+font-weight:700;
+margin-bottom:40px;
+color:#1e1111;
+}
+
+.touchForm{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.touchForm input,
+.touchForm select,
+.touchForm textarea{
+width:100%;
+padding:18px 18px;
+border:1.5px solid #2b1d1d;
+border-radius:14px;
+font-size:20px;
+outline:none;
+background:white;
+}
+
+.touchForm textarea{
+height:150px;
+resize:none;
+}
+
+.touchForm button{
+width:140px;
+padding:16px;
+border:none;
+border-radius:40px;
+background:#1b0f10;
+color:white;
+font-size:24px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.touchForm button:hover{
+transform:scale(1.05);
+}
+
+@media(max-width:768px){
+.touchContainer h2{
+font-size:42px;
+}
+
+.touchForm input,
+.touchForm select,
+.touchForm textarea{
+font-size:16px;
+padding:14px;
+}
+
+.touchForm button{
+font-size:18px;
+width:120px;
+}
+}
