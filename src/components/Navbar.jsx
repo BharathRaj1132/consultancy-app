@@ -27,7 +27,7 @@ export default function Navbar() {
 
         <li onClick={() => scrollToSection("story")}>OUR STORY</li>
         <li onClick={() => scrollToSection("getintouch")}>GET IN TOUCH</li>
-        <li onClick={() => scrollToSection("contact")}>CONTACT US</li>
+        <li onClick={() => scrollToSection("services")}>SERVICES</li>
       </ul>
     </nav>
   );

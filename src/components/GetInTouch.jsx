@@ -1,27 +1,68 @@
+import "../styles/contact.css";
+
 export default function GetInTouch() {
   return (
-    <section id="getintouch" className="touchSection">
-      <div className="touchContainer">
-        <h2>Get in Touch</h2>
+    <section id="getintouch" className="contactSection">
 
-        <form className="touchForm">
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="PhoneNo." />
-          <input type="email" placeholder="Email" />
+      <div className="contactContainer">
 
-          <select>
-            <option>How did you hear about us?</option>
-            <option>Instagram</option>
-            <option>Google</option>
-            <option>Friend</option>
-            <option>Other</option>
-          </select>
+        {/* LEFT SIDE */}
+        <div className="contactInfo fadeUp">
+          <h2>Get in Touch</h2>
 
-          <textarea placeholder="Leave us a Message"></textarea>
+          <p>
+            We’d love to hear from you. Reach out for inquiries, collaborations,
+            or support. We usually respond within 24 hours.
+          </p>
 
-          <button type="submit">Submit</button>
-        </form>
+          <div className="infoCard">
+            <h4>📍 Address</h4>
+            <span>xxxxx, Tamil Nadu, India</span>
+          </div>
+
+          <div className="infoCard">
+            <h4>📞 Phone</h4>
+            <span>+91 xxxxx xxxxx</span>
+          </div>
+
+          <div className="infoCard">
+            <h4>✉️ Email</h4>
+            <span>xxx@xxxxxxx.in</span>
+          </div>
+
+          <div className="infoCard">
+            <h4>⏰ Working Hours</h4>
+            <span>Mon - Sat | 9:00 AM - 6:00 PM</span>
+          </div>
+        </div>
+
+        {/* RIGHT SIDE */}
+        <div className="contactFormBox fadeUp delay">
+
+          <form className="contactForm">
+
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Phone No." />
+            <input type="email" placeholder="Email" />
+
+            <select>
+              <option>How did you hear about us?</option>
+              <option>Instagram</option>
+              <option>Google</option>
+              <option>Friend</option>
+              <option>Other</option>
+            </select>
+
+            <textarea placeholder="Leave us a Message"></textarea>
+
+            <button type="submit">Send Message</button>
+
+          </form>
+
+        </div>
+
       </div>
+
     </section>
   );
 }

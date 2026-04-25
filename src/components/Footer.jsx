@@ -1,20 +1,37 @@
 import logo from "../assets/logo.png";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "../styles/footer.css";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 
 export default function Footer() {
-    const [menu, setMenu] = useState(false);
+  const [menu, setMenu] = useState(false);
+  const footerRef = useRef(null);
 
-    const scrollToSection = (id) => {
+  const scrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
     setMenu(false);
   };
 
+  // 👇 Animation trigger on scroll
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          footerRef.current.classList.add("show");
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (footerRef.current) observer.observe(footerRef.current);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <footer className="footer">
+    <footer ref={footerRef} className="footer fadeUp">
       <div className="footerTop">
-        <img src={logo} className="footerLogo" />
+        <img src={logo} className="footerLogo" alt="logo" />
 
         <div>
           <h3>xxxxx xxx xxxxxx</h3>
@@ -41,7 +58,20 @@ export default function Footer() {
 
       <div className="footerBottom">
         <p>© 2026 xxxx xxx xxxxxx. All Rights Reserved.</p>
-        <FaInstagram className="insta" />
+
+        <div className="socialIcons">
+          <a href="https://instagram.com" target="_blank" rel="noreferrer" className="iconBtn" data-tooltip="Instagram">
+            <FaInstagram />
+          </a>
+
+          <a href="https://facebook.com" target="_blank" rel="noreferrer" className="iconBtn" data-tooltip="Facebook">
+            <FaFacebookF />
+          </a>
+
+          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="iconBtn" data-tooltip="LinkedIn">
+            <FaLinkedinIn />
+          </a>
+        </div>
       </div>
     </footer>
   );

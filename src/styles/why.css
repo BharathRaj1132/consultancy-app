@@ -1,0 +1,151 @@
+/* IMPORT BETTER FONT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+.whySection{
+background:#ffffff;
+padding:120px 40px;
+font-family:'Inter',sans-serif;
+}
+
+/* LAYOUT */
+.whyContainer{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:80px; /* more breathing space */
+flex-wrap:wrap;
+}
+
+/* LEFT */
+.whyLeft{
+flex:1;
+min-width:300px;
+}
+
+.whyLeft h2{
+font-size:44px;
+margin-bottom:20px;
+color:#1a2b3c;
+}
+
+.whyLeft p{
+font-size:18px;
+line-height:1.9;
+color:#555;
+max-width:520px;
+}
+
+/* RIGHT */
+.whyRight{
+flex:1;
+display:flex;
+justify-content:center;
+align-items:center;
+min-width:300px;
+}
+
+/* CIRCLE */
+.circleWrapper{
+position:relative;
+width:360px;
+height:360px;
+animation:float 6s ease-in-out infinite;
+}
+
+/* CENTER LOGO */
+.centerLogo{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%, -50%);
+width:90px;
+height:90px;
+object-fit:contain;
+z-index:2;
+}
+
+/* POINTS */
+.point{
+position:absolute;
+width:140px;
+background:#f7f9fb;
+padding:12px;
+border-radius:12px;
+text-align:center;
+font-size:13px;
+transform:translate(-50%, -50%);
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.point h4{
+margin-bottom:5px;
+font-size:14px;
+color:#244b6a;
+}
+
+.point span{
+color:#666;
+font-size:12px;
+}
+
+/* HOVER */
+.point:hover{
+transform:translate(-50%, -50%) scale(1.08);
+box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* POSITIONING */
+.p1{ top:0%; left:50%; }
+.p2{ top:30%; left:100%; }
+.p3{ top:85%; left:75%; }
+.p4{ top:85%; left:25%; }
+.p5{ top:30%; left:0%; }
+
+/* FLOAT ANIMATION */
+@keyframes float{
+0%,100%{ transform:translateY(0); }
+50%{ transform:translateY(-12px); }
+}
+
+/* FADE-UP */
+.fadeUp{
+opacity:0;
+transform:translateY(50px);
+animation:fadeUpAnim 1s ease forwards;
+}
+
+.fadeUp.delay{
+animation-delay:0.3s;
+}
+
+@keyframes fadeUpAnim{
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+.whyContainer{
+flex-direction:column;
+text-align:center;
+gap:50px;
+}
+
+.whyLeft p{
+margin:auto;
+}
+
+.circleWrapper{
+width:280px;
+height:280px;
+}
+
+.point{
+width:120px;
+font-size:12px;
+}
+}
