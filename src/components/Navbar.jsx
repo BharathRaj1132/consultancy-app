@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "../styles/navbar.css";
 import logo from "../assets/logo.png";
@@ -11,9 +11,36 @@ export default function Navbar() {
     setMenu(false);
   };
 
+  // 📱 Swipe down to close
+  useEffect(() => {
+    let startY = 0;
+
+    const handleTouchStart = (e) => {
+      startY = e.touches[0].clientY;
+    };
+
+    const handleTouchMove = (e) => {
+      const currentY = e.touches[0].clientY;
+      if (currentY - startY > 80) {
+        setMenu(false);
+      }
+    };
+
+    document.addEventListener("touchstart", handleTouchStart);
+    document.addEventListener("touchmove", handleTouchMove);
+
+    return () => {
+      document.removeEventListener("touchstart", handleTouchStart);
+      document.removeEventListener("touchmove", handleTouchMove);
+    };
+  }, []);
+
   return (
     <nav className="navbar">
-      <div className="mobileIcon" onClick={() => setMenu(!menu)}>
+      <div
+        className={`mobileIcon ${menu ? "active" : ""}`}
+        onClick={() => setMenu(!menu)}
+      >
         {menu ? <FaTimes /> : <FaBars />}
       </div>
 

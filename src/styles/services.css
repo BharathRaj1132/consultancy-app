@@ -1,0 +1,127 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+/* SECTION */
+.servicesSection{
+background:#ffffff;
+padding:120px 40px;
+font-family:'Inter',sans-serif;
+text-align:center;
+}
+
+/* TITLE */
+.servicesSection h2{
+font-size:44px;
+color:#1a2b3c;
+margin-bottom:15px;
+}
+
+/* INTRO */
+.servicesIntro{
+max-width:700px;
+margin:0 auto 50px;
+font-size:16px;
+color:#555;
+line-height:1.8;
+}
+
+/* WRAPPER (DESKTOP GRID) */
+.servicesWrapper{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+max-width:1100px;
+margin:auto;
+}
+
+/* CARD */
+.serviceCard{
+background:#f7f9fb;
+padding:25px;
+border-radius:16px;
+box-shadow:0 8px 20px rgba(0,0,0,0.06);
+transition:0.4s ease;
+text-align:left;
+
+opacity:0;
+transform:translateY(30px);
+}
+
+/* SCROLL ACTIVE */
+.serviceCard.active{
+opacity:1;
+transform:translateY(0);
+}
+
+/* HOVER */
+.serviceCard:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(0,0,0,0.12);
+}
+
+/* TITLE */
+.serviceCard h3{
+font-size:18px;
+margin-bottom:10px;
+color:#244b6a;
+}
+
+/* TEXT */
+.serviceCard p{
+font-size:14px;
+color:#555;
+line-height:1.6;
+}
+
+/* ⭐ HIGHLIGHTED SERVICE */
+.highlight{
+background:#e3a326;
+color:white;
+box-shadow:0 15px 40px rgba(227,163,38,0.3);
+}
+
+.highlight h3,
+.highlight p{
+color:white;
+}
+
+/* ANIMATION */
+.fadeUp{
+opacity:0;
+transform:translateY(40px);
+transition:1s ease;
+}
+
+.fadeUp.active{
+opacity:1;
+transform:translateY(0);
+}
+
+.delay{
+transition-delay:0.2s;
+}
+
+/* =========================
+   MOBILE (SWIPE STYLE)
+========================= */
+@media(max-width:768px){
+
+.servicesSection h2{
+font-size:32px;
+}
+
+.servicesWrapper{
+display:flex;
+overflow-x:auto;
+gap:15px;
+padding-bottom:10px;
+scroll-snap-type:x mandatory;
+-webkit-overflow-scrolling:touch;
+}
+
+.serviceCard{
+min-width:80%;
+scroll-snap-align:center;
+}
+
+}
