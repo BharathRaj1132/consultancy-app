@@ -22,29 +22,25 @@ export default function Services() {
 
   const services = [
     {
-      title: "Doctor Consultation",
-      desc: "General and specialist medical consultation for all age groups.",
+      title: "University Admission Assistance:",
+      desc: "We guide students in selecting the right university and take complete responsibility for the admission process after the selection is finalized.",
       highlight: true,
     },
     {
-      title: "Second Opinion",
-      desc: "Get clarity and confidence on your medical diagnosis.",
+      title: "Visa Process Support:",
+      desc: "After admission, we assist students throughout the student visa application process and ensure smooth documentation and approval guidance.",
     },
     {
-      title: "Medical Report Review",
-      desc: "Simple explanation of reports like blood tests and scans.",
+      title: "Currency Conversion & Fee Payment Assistance:",
+      desc: "For the convenience of parents, we also assist with tuition fee payments and currency conversion, helping avoid the hassle of carrying cash.",
     },
     {
-      title: "Health Checkup Guidance",
-      desc: "Personalized advice for preventive health checkups.",
+      title: "Emergency Support:",
+      desc: "We provide guidance and support during emergency situations, as we maintain direct communication with the universities we recommend.",
     },
     {
-      title: "Chronic Care Support",
-      desc: "Guidance for long-term conditions like diabetes & BP.",
-    },
-    {
-      title: "Emergency Guidance",
-      desc: "Immediate steps and advice before hospital visit.",
+      title: "Academic Monitoring & Guidance:",
+      desc: "Students’ semester performance and internal marks are regularly monitored, and updates are shared with parents to ensure proper academic progress.",
     },
   ];
 

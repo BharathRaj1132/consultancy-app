@@ -34,18 +34,19 @@ export default function Footer() {
         <img src={logo} className="footerLogo" alt="logo" />
 
         <div>
-          <h3>xxxxx xxx xxxxxx</h3>
-          <p>xxxxx, Tamil Nadu - xxxxxx</p>
+          <h3>DOC LAUNCH OVERSEAS PRIVATE LIMITED</h3>
+          <p>S.No.214F/1, Appu Towers, Tiruchengode Road, Namakkal, <br/>
+            Namakkal- 637001, Tamil Nadu</p>
         </div>
 
         <div>
           <h3>Phone</h3>
-          <p>+91 xxxxx xxxxx</p>
+          <p>+91 93428 27681</p>
         </div>
 
         <div>
           <h3>Email</h3>
-          <p>xxx@xxxxxxx.in</p>
+          <p>doclaunchoverseaspvt@hotmail.com</p>
         </div>
       </div>
 

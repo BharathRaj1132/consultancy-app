@@ -17,17 +17,20 @@ export default function GetInTouch() {
 
           <div className="infoCard">
             <h4>📍 Address</h4>
-            <span>xxxxx, Tamil Nadu, India</span>
+            <span>DOC LAUNCH OVERSEAS PRIVATE LIMITED <br/>
+            S.No.214F/1, Appu Towers, Tiruchengode Road, Namakkal, <br/>
+            Namakkal- 637001, Tamil Nadu
+            </span>
           </div>
 
           <div className="infoCard">
             <h4>📞 Phone</h4>
-            <span>+91 xxxxx xxxxx</span>
+            <span>+91 93428 27681</span>
           </div>
 
           <div className="infoCard">
             <h4>✉️ Email</h4>
-            <span>xxx@xxxxxxx.in</span>
+            <span>doclaunchoverseaspvt@hotmail.com</span>
           </div>
 
           <div className="infoCard">

@@ -10,10 +10,8 @@ export default function WhyOurCompany() {
         <div className="whyLeft fadeUp">
           <h2>Why Our Company</h2>
           <p>
-            We believe in doing things the right way — simple, honest, and effective.
-            Our approach is built around delivering real value, building trust, and
-            creating long-term relationships with our customers. Every step we take
-            is focused on quality, reliability, and continuous improvement.
+            We are foreign medical graduates who completed our MBBS abroad and successfully navigated every challenge from admission to graduation. Having experienced the journey firsthand, we understand the confusion, risks, and struggles students often face while pursuing medical education overseas.<br/><br/>
+            Our mission is to guide aspiring medical students with genuine mentorship, reliable support, and practical insights at every step of their journey. From choosing the right university to settling abroad and achieving academic success, we are committed to helping students confidently turn their dream of becoming a doctor into reality.
           </p>
         </div>
 
