@@ -11,7 +11,7 @@ export default function WhyOurCompany() {
           <h2>Why Our Company</h2>
           <p>
             We are foreign medical graduates who completed our MBBS abroad and successfully navigated every challenge from admission to graduation. Having experienced the journey firsthand, we understand the confusion, risks, and struggles students often face while pursuing medical education overseas.<br/><br/>
-            Our mission is to guide aspiring medical students with genuine mentorship, reliable support, and practical insights at every step of their journey. From choosing the right university to settling abroad and achieving academic success, we are committed to helping students confidently turn their dream of becoming a doctor into reality.
+            Our mission is to guide aspiring medical students with genuine mentorship, reliable support, and practical insights at every step of their journey. From choosing the right university to studying abroad and achieving academic success, we are committed to helping students confidently turn their dream of becoming a doctor into reality.
           </p>
         </div>
 

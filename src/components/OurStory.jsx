@@ -45,7 +45,7 @@ export default function OurStory() {
         </div>
 
         <div className={`storyCard ${visible ? "active delay2" : ""}`}>
-          <span className="roleBadge">Creative Head</span>
+          <span className="roleBadge">Co-Founder & Creative Head</span>
           <img src="/images/person2.jpeg" className="storyImg" />
           <h3>Dr.Laya</h3>
           {/* <p className="quote">“Design is how it works, not how it looks.”</p> */}
