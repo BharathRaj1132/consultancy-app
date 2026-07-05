@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
+*{
+    box-sizing:border-box;
+}
+
 .servicesSection{
 background:#fff;
 padding:110px 40px;
@@ -243,50 +247,91 @@ grid-template-columns:repeat(2,1fr);
 MOBILE
 ==========================*/
 
-@media(max-width:768px){
+@media (max-width:768px){
 
 .servicesSection{
-padding:80px 20px;
+    padding:70px 16px;
+    overflow-x:hidden;
 }
 
 .servicesSection h2{
-font-size:34px;
+    font-size:32px;
+}
+
+.servicesIntro{
+    margin-bottom:40px;
 }
 
 .servicesLayout{
-display:flex;
-flex-direction:column;
-gap:35px;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    width:100%;
 }
 
 .countriesSection{
-padding:30px 22px;
-}
-
-.countriesSection h3{
-font-size:26px;
+    position:relative;
+    top:0;
+    width:100%;
+    max-width:100%;
+    padding:24px 18px;
+    box-sizing:border-box;
+    overflow:hidden;
 }
 
 .countryGrid{
-grid-template-columns:1fr;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:12px;
+    width:100%;
+}
+
+.countryCard{
+    width:100%;
+    box-sizing:border-box;
+    padding:14px;
+    gap:10px;
+}
+
+.countryCard span{
+    font-size:15px;
+    white-space:normal;
+    word-break:break-word;
+}
+
+.countryFlag{
+    width:24px;
+    height:18px;
+    flex-shrink:0;
 }
 
 .servicesWrapper{
-display:flex;
-overflow-x:auto;
-gap:18px;
-scroll-snap-type:x mandatory;
-padding-bottom:10px;
--webkit-overflow-scrolling:touch;
+    display:flex;
+    overflow-x:auto;
+    gap:16px;
+    padding-bottom:10px;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
 }
 
 .servicesWrapper::-webkit-scrollbar{
-display:none;
+    display:none;
 }
 
 .serviceCard{
-min-width:85%;
-scroll-snap-align:center;
+    min-width:90%;
+    max-width:90%;
+    flex-shrink:0;
+    scroll-snap-align:center;
+}
+
+.serviceCard h3{
+    font-size:18px;
+}
+
+.serviceCard p{
+    font-size:14px;
+    line-height:1.6;
 }
 
 }
