@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import ReactCountryFlag from "react-country-flag";
 import "../styles/services.css";
 
 export default function Services() {
@@ -44,32 +45,77 @@ export default function Services() {
     },
   ];
 
+ const countries = [
+  { code: "RU", name: "Russia" },
+  { code: "MU", name: "Mauritius" },
+  { code: "KG", name: "Kyrgyzstan" },
+  { code: "GE", name: "Georgia" },
+  { code: "AM", name: "Armenia" },
+  { code: "MD", name: "Moldova" },
+  { code: "UA", name: "Ukraine" },
+];
   return (
     <section id="services" className="servicesSection" ref={sectionRef}>
-
       <h2 className={visible ? "fadeUp active" : "fadeUp"}>Our Services</h2>
 
-      <p className={visible ? "servicesIntro fadeUp active delay" : "servicesIntro fadeUp"}>
-        Trusted medical consultancy services designed for clarity, care, and confidence.
+      <p
+        className={
+          visible
+            ? "servicesIntro fadeUp active delay"
+            : "servicesIntro fadeUp"
+        }
+      >
+        Trusted medical consultancy services designed for clarity, care, and
+        confidence.
       </p>
 
-      {/* DESKTOP GRID / MOBILE SCROLL */}
-      <div className="servicesWrapper">
+      <div className="servicesLayout">
+        {/* LEFT SIDE */}
+        <div
+          className={`countriesSection ${
+            visible ? "fadeLeft active" : "fadeLeft"
+          }`}
+        >
+          <span className="countryBadge">MBBS Abroad</span>
 
-        {services.map((item, index) => (
-          <div
-            key={index}
-            className={`serviceCard ${item.highlight ? "highlight" : ""} ${
-              visible ? "active" : ""
-            }`}
-          >
-            <h3>{item.title}</h3>
-            <p>{item.desc}</p>
-          </div>
-        ))}
+          <p>
+            We are supporting students in securing MBBS admissions at recognized medical universities in the following countries
+          </p>
 
+          <div className="countryGrid">
+  {countries.map((country, index) => (
+    <div
+      key={index}
+      className="countryCard"
+      style={{ animationDelay: `${index * 0.1}s` }}
+    >
+      <ReactCountryFlag
+        countryCode={country.code}
+        svg
+        className="countryFlag"
+      />
+
+      <span>&nbsp;{country.name}</span>
+    </div>
+  ))}
+</div>
+        </div>
+
+        {/* RIGHT SIDE */}
+        <div className="servicesWrapper">
+          {services.map((item, index) => (
+            <div
+              key={index}
+              className={`serviceCard ${item.highlight ? "highlight" : ""} ${
+                visible ? "active" : ""
+              }`}
+            >
+              <h3>{item.title}</h3>
+              <p>{item.desc}</p>
+            </div>
+          ))}
+        </div>
       </div>
-
     </section>
   );
 }

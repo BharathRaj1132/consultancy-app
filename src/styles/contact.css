@@ -160,3 +160,91 @@ max-width:100%;
 }
 
 }
+
+/* ===========================
+EMAILJS FORM ENHANCEMENTS
+=========================== */
+
+.contactForm input,
+.contactForm select,
+.contactForm textarea{
+width:100%;
+padding:15px 18px;
+border:1px solid #d9d9d9;
+border-radius:10px;
+outline:none;
+font-size:15px;
+transition:.3s;
+background:#fff;
+box-sizing:border-box;
+}
+
+.contactForm input:focus,
+.contactForm select:focus,
+.contactForm textarea:focus{
+border-color:#103a5a;
+box-shadow:0 0 0 3px rgba(16,58,90,.12);
+}
+
+.contactForm textarea{
+resize:vertical;
+min-height:140px;
+}
+
+.contactForm button{
+width:100%;
+padding:15px;
+border:none;
+border-radius:10px;
+background:#103a5a;
+color:#fff;
+font-size:16px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.contactForm button:hover:not(:disabled){
+background:#0d2f48;
+transform:translateY(-2px);
+}
+
+.contactForm button:disabled{
+cursor:not-allowed;
+opacity:.75;
+}
+
+.successMsg{
+margin-top:18px;
+padding:14px;
+background:#e9f8ef;
+color:#1c7c3a;
+border:1px solid #8dd3a5;
+border-radius:8px;
+font-size:15px;
+font-weight:600;
+animation:fadeIn .4s ease;
+}
+
+.errorMsg{
+margin-top:18px;
+padding:14px;
+background:#fff1f1;
+color:#c62828;
+border:1px solid #ef9a9a;
+border-radius:8px;
+font-size:15px;
+font-weight:600;
+animation:fadeIn .4s ease;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(10px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
