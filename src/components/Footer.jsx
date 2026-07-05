@@ -69,9 +69,9 @@ export default function Footer() {
             <FaFacebookF />
           </a>
 
-          <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="iconBtn" data-tooltip="LinkedIn">
+          {/* <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="iconBtn" data-tooltip="LinkedIn">
             <FaLinkedinIn />
-          </a>
+          </a> */}
         </div>
       </div>
     </footer>
