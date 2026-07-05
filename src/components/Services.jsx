@@ -25,7 +25,7 @@ export default function Services() {
     {
       title: "University Admission Assistance:",
       desc: "We guide students in selecting the right university and take complete responsibility for the admission process after the selection is finalized.",
-      highlight: true,
+      // highlight: true,
     },
     {
       title: "Visa Process Support:",
