@@ -1,7 +1,7 @@
 import logo from "../assets/logo.png";
 import { useState, useEffect, useRef } from "react";
 import "../styles/footer.css";
-import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   const [menu, setMenu] = useState(false);
@@ -65,8 +65,12 @@ export default function Footer() {
             <FaInstagram />
           </a>
 
-          <a href="https://facebook.com" target="_blank" rel="noreferrer" className="iconBtn" data-tooltip="Facebook">
+          <a href="https://www.facebook.com/profile.php?id=61590670086152" target="_blank" rel="noreferrer" className="iconBtn" data-tooltip="Facebook">
             <FaFacebookF />
+          </a>
+
+          <a href="https://www.youtube.com/@DocLaunchOverseas" target="_blank" rel="noreferrer" className="iconBtn" data-tooltip="YouTube">
+            <FaYoutube />
           </a>
 
           {/* <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="iconBtn" data-tooltip="LinkedIn">
