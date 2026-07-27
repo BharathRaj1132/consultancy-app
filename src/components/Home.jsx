@@ -59,10 +59,14 @@ export default function Home() {
       {/* CONTENT */}
       <div className="overlay">
         <div className="heroContent">
-          <h1 className="fadeUp">Simple and Honest, Like It Used To Be.</h1>
+          {/* <h1 className="fadeUp">Simple and Honest, Like It Used To Be.</h1> */}
+          <h1 className="fadeUp">###### ###### ###### # #### ## ######.</h1>
 
-          <p className="heroSub fadeUp delay">
+          {/* <p className="heroSub fadeUp delay">
             Delivering quality and trust through simple, reliable solutions.
+          </p> */}
+          <p className="heroSub fadeUp delay">
+            ######### ####### ## ###### #### #### ## ######.
           </p>
 
           <button
@@ -73,7 +77,7 @@ export default function Home() {
                 .scrollIntoView({ behavior: "smooth" })
             }
           >
-            Get in Touch
+            ### ## ###{/* Get in Touch */}
           </button>
         </div>
       </div>
