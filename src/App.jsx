@@ -18,11 +18,11 @@ export default function App() {
         image="https://doclaunchoverseas.com/logo.png" />
       <Navbar />
       <Home />
-      <Services />
+      {/* <Services />
       <WhyOurCompany />
       <OurStory />
       <GetInTouch />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
